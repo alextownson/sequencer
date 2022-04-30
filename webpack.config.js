@@ -16,6 +16,6 @@ module.exports = {
         path: path.resolve(__dirname, 'build')
     },
 
-    // Enables development built-in optimizations. Other mode option is production. 
-    mode: 'development',
+    // Enables built-in optimizations.
+    mode: 'production',
 };
