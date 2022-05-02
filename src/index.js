@@ -7,9 +7,23 @@ import { createRoot } from 'react-dom/client';
 // importing the css file
 import './main.css'
 // Import from tone app
-import { play } from './app.js'
+import { play } from './polysynth.js'
 
-const playButton = <button onClick={play}>PLAY</button>;
+
+// When I use require to get my image, it points the distribution html img src property to an object module. In other words it does not render.
+// import image
+// const playImage = require ('./assets/play.png');
+
+// For images in webpack you need to require them. You also need a
+// const playButton = <img className="play-button" scr={playImage} onClick={play} />;
+
+
+// When I import the image, it points the distribution html img src property to my local host and then the asset folder.
+// import image
+import playImage from './assets/play.png'
+
+// For images in webpack you need to require them. You also need a
+const playButton = <img className="play-button" scr={playImage} onClick={play} />;
 
 
 

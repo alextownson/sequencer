@@ -50,7 +50,19 @@ module.exports = {
                     'css-loader',
                     'sass-loader',
                 ],
-            }
+            }, 
+            // creating a loader to handle my assets
+            {
+                // looking for these file types
+                test: /\.(png|jpe?g|gif)$/,
+
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        name: 'assets/[name].[ext]',
+                    }
+                },
+            },
         ]
     },
 
