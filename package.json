@@ -1,23 +1,8 @@
 {
-  "name": "sequencer",
-  "version": "1.0.0",
-  "description": "Browser sequencer.",
-  "main": "index.js",
-  "scripts": {
+    "scripts": {
     "serve": "webpack serve --mode development",
     "build": "webpack --mode production"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alextownson/sequencer.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/alextownson/sequencer/issues"
-  },
-  "homepage": "https://github.com/alextownson/sequencer#readme",
   "dependencies": {
     "johnny-five": "^2.1.0",
     "react": "^18.1.0",
@@ -32,8 +17,6 @@
     "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
     "mini-css-extract-plugin": "^2.6.0",
-    "sass": "^1.51.0",
-    "sass-loader": "^12.6.0",
     "style-loader": "^3.3.1",
     "url-loader": "^4.1.1",
     "webpack": "^5.72.0",
