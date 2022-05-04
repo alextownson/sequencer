@@ -1,7 +1,7 @@
 import '../styles/main.css';
 import '../index.html';
 import React from 'react';
-import { play } from './Sequencer.js';
+import { play } from './Sequencer';
 
 const Interface = () => {
     return (
@@ -25,13 +25,20 @@ const Interface = () => {
     )
 };
 
+
+export default Interface;
+
+
+// Couldn't quite figure this out in a reasonable amount of time. I wanted to create a nested array for the buttons. I got the buttons to render but I couldn't figure out the logic to tell which one has been pressed for the synth. 
+
 const SeqBut = () => {
-    return <button className='seq-but'></button>;
-};
+    return <button className='seq-but' name='seq-but' ></button>
+}
+
 
 const Buttons = [];
 for (let i = 0; i < 16; i++){
-    Buttons.push(SeqBut());
+    Buttons.push(<SeqBut></SeqBut>);
 };
 
 const SeqRow = () => {
@@ -43,4 +50,3 @@ for (let i = 0; i < 12; i++){
     Rows.push(SeqRow());
 };
 
-export default Interface;

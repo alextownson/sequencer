@@ -68,8 +68,18 @@ module.exports = {
         ]
     },
 
+
+node: {
+    // provides the global variable named "global"
+    global: true,
+    
+    // provide __filename and __dirname global variables
+    __filename: true,
+    __dirname: true,
+},
+  
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx'],
     },
 
     plugins: [new MiniCssExtractPlugin()],

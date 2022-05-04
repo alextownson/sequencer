@@ -4,7 +4,7 @@ const board = new five.Board();
 // export these
 let controllerTempo;
 let oldControllerTempo;
-let controllerVolume;
+export let controllerVolume;
 let oldControllerVolume;
 let snapshots = " ";
 // This will be an imported variable
