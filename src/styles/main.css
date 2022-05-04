@@ -108,7 +108,7 @@ body {
     align-content: center;
 }
 
-button, input{
+button.play-button, button.download-button, input{
     font-family: elevon, sans-serif;
     font-weight: 800;
     font-style: normal; 
@@ -175,4 +175,31 @@ button, input{
     cursor: pointer;
     margin-right: 50px;
     background-color: transparent;
+}
+
+/* SEQUENCER BUTTONS */
+
+.seq-container {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -42%);
+    width: 80%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.seq-row{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.seq-but{
+    width: 30px;
+    height: 30px;
 }

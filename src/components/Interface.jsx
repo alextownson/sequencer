@@ -1,9 +1,9 @@
 import '../styles/main.css';
 import '../index.html';
 import React from 'react';
-import { play } from './PolySynth.js';
+import { play } from './Sequencer.js';
 
-const App = () => {
+const Interface = () => {
     return (
         <React.Fragment>
             <section className='control-panel'>
@@ -19,9 +19,28 @@ const App = () => {
             <button className='download-button'></button> 
 
             </section>
-        </React.Fragment>
 
+            <section className='seq-container'>{Rows}</section>
+        </React.Fragment>
     )
 };
 
-export default App;
+const SeqBut = () => {
+    return <button className='seq-but'></button>;
+};
+
+const Buttons = [];
+for (let i = 0; i < 16; i++){
+    Buttons.push(SeqBut());
+};
+
+const SeqRow = () => {
+    return <div className='seq-row'>{Buttons}</div>;
+};
+
+const Rows = [];
+for (let i = 0; i < 12; i++){
+    Rows.push(SeqRow());
+};
+
+export default Interface;
