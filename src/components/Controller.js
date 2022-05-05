@@ -1,13 +1,15 @@
 const five = require("johnny-five");
 const board = new five.Board();
 
+// I learned that can't do cyclical imports/exports which I did not know. That was one barrier to making this work. 
+
 // export these
 let controllerTempo;
 let oldControllerTempo;
-export let controllerVolume;
+let controllerVolume;
 let oldControllerVolume;
 let snapshots = " ";
-// This will be an imported variable
+
 let lcdText = " ";
 
 
